@@ -16,11 +16,13 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addInterceptor(localeChangeInterceptor);
     }
 
-
-        @Override
-        public void addCorsMappings(CorsRegistry registry) {
-            registry.addMapping("/**").allowedOrigins("*").allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
-
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        // Restrict allowed origins to the specific URL
+        registry.addMapping("/**")
+                .allowedOrigins("https://webtechcontent.vercel.app") // Allow only this origin
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Specify allowed HTTP methods
+                .allowedHeaders("*") // Allow all headers
+                .allowCredentials(true); // Allow sending credentials such as cookies
     }
-
 }

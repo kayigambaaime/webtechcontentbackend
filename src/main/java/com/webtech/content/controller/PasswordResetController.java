@@ -5,7 +5,7 @@ import com.webtech.content.model.User;
 import com.webtech.content.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
+@CrossOrigin(origins = "https://webtechcontent.vercel.app") // Allow requests from the specific URL
 @RestController
 public class PasswordResetController {
 

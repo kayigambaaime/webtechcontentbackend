@@ -292,7 +292,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+@CrossOrigin(origins = "https://webtechcontent.vercel.app") // Allow requests from the specific URL
 @RestController
 @RequestMapping("/admin")
 public class AdminUserController {
