@@ -13,29 +13,10 @@
 	<artifactId>content</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>efurniture</name>
-	<description>e-furniture project </description>
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
-	<developers>
-		<developer/>
-	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
+	<description>e-furniture project</description>
 	<properties>
-		<java.version>22</java.version>
+		<java.version>21</java.version>
 	</properties>
-	<repositories>
-		<repository>
-			<id>itext-repo</id>
-			<url>https://repo.itextpdf.com/maven2</url>
-		</repository>
-	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -89,5 +70,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
